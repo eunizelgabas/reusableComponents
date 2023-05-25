@@ -1,0 +1,123 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-primary {
+    @apply bg-purple-900;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    @apply px-4 lg:px-0;
+}
+
+.main-nav {
+    @apply flex space-x-2
+}
+
+.main-nav .main-link {
+    @apply py-4 px-2 text-green-100 font-semibold
+}
+
+.main-nav .main-link:hover {
+    @apply bg-[#1f0025] duration-300 px-4;
+    /* background-color: #00250c; */
+}
+
+.list-item {
+    @apply border border-gray-300 p-2 rounded hover:bg-gray-200 mb-1
+}
+
+.table {
+    width: 100%;
+}
+
+.table thead tr {
+    @apply bg-purple-900 text-green-100
+}
+
+.table th,
+.table td {
+    @apply p-2 border border-purple-400
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #d6dbd9;
+}
+
+h1 {
+    @apply text-4xl font-medium
+}
+
+.btn-primary{
+    @apply bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded
+}
+
+.overlay {
+    z-index: 100;
+    background-color: #222;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full
+}
+
+.dialog-wrapper {
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full flex justify-center items-center
+}
+
+.dialog-wrapper .dialog {
+    @apply bg-purple-300 p-4 rounded-lg min-w-[600px]
+}
+
+.lay {
+    z-index: 100;
+    background-color: #222;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full
+}
+
+ .d-wrapper{
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full flex justify-center items-center
+}
+
+.d-wrapper .dialog {
+    @apply bg-red-300 p-4 rounded-lg min-w-[600px]
+}
+
+.ol {
+    z-index: 100;
+    background-color: #222;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full
+}
+
+ .di-wrapper{
+    z-index: 200;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @apply min-h-full min-w-full flex justify-center items-center
+}
+
+.di-wrapper .dialog {
+    @apply bg-blue-300 p-4 rounded-lg min-w-[600px]
+}
+
+
